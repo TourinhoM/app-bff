@@ -14,9 +14,10 @@
     "undici": "^6.21.0"
   },
   "overrides": {
-    "cross-spawn": ">=7.0.5",
-    "minimatch": ">=9.0.7",
-    "tar": ">=7.5.11",
-    "glob": ">=11.1.0"
+    "cross-spawn": "7.0.5",
+    "minimatch": "9.0.7",
+    "tar": "7.5.11",
+    "glob": "10.5.0",
+    "protobufjs": "8.0.2"
   }
 }
