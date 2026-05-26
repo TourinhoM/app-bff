@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: app-bff
+  description: BFF — aggregates catalog and reviews for frontend consumers
+  annotations:
+    github.com/project-slug: TourinhoM/app-bff
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-alpha
+  system: platform-lab
+  dependsOn:
+    - component:app-catalog
+    - component:app-reviews

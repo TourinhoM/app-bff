@@ -1,0 +1,9 @@
+apiVersion: platform.lab/v1alpha1
+kind: AppNamespace
+metadata:
+  name: app-bff
+  namespace: default
+spec:
+  teamName: team-alpha
+  cpuLimit: "2"
+  memoryLimit: 2Gi
