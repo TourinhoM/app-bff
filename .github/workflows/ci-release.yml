@@ -1,0 +1,16 @@
+name: CI - Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    uses: TourinhoM/org-ci-platform/.github/workflows/ci-release.yml@main
+    secrets:
+      RELEASE_APP_PRIVATE_KEY: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
