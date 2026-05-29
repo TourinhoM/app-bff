@@ -1,9 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
+components:
+  - https://github.com/TourinhoM/platform-app-base//base?ref=v1.0.0
+
 resources:
-  - https://github.com/TourinhoM/platform-app-base/base?ref=v1.0.0
   - claims/appnamespace.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
 
 configMapGenerator:
   - name: app-config
