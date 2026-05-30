@@ -8,7 +8,7 @@ on:
 jobs:
   ci:
     permissions:
-      contents: read
+      contents: write
       security-events: write
       actions: read
       packages: write
