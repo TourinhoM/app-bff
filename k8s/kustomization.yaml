@@ -18,5 +18,5 @@ configMapGenerator:
 
 images:
   - name: app-image
-    newName: ghcr.io/tourinhoM/app-bff
+    newName: ghcr.io/tourinhom/app-bff
     newTag: latest
