@@ -5,6 +5,7 @@ metadata:
   description: BFF — aggregates catalog and reviews for frontend consumers
   annotations:
     github.com/project-slug: TourinhoM/app-bff
+    argocd/app-name: app-bff
 spec:
   type: service
   lifecycle: experimental
